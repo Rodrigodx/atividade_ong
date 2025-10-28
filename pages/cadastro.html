@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cadastro - ONG Exemplo</title>
   <link rel="stylesheet" href="../css/style.css">
-  <script src="js/masks.js" defer></script>
+  <script src="../js/mask.js" defer></script>
 </head>
 <body>
   <header>
@@ -70,6 +70,13 @@
   <footer>
     <p>&copy; 2025 ONG Exemplo</p>
   </footer>
-  <script src="../js/mask.js"></script>
+
+  <script>
+    document.getElementById('formCadastro').addEventListener('submit', (e) => {
+      e.preventDefault();
+      alert("Cadastro enviado com sucesso! (simulação sem back-end)");
+      e.target.reset();
+    });
+  </script>
 </body>
 </html>
