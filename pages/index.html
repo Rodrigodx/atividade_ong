@@ -1,51 +1,67 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ONG Exemplo - Início</title>
-  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/index.css">
+
 </head>
+
 <body>
   <header>
     <nav>
+      <div class="logo">ONG Exemplo</div>
       <ul>
         <li><a href="index.html">Início</a></li>
         <li><a href="projetos.html">Projetos</a></li>
         <li><a href="cadastro.html">Cadastro</a></li>
       </ul>
+      <button class="menu-toggle" aria-label="Abrir menu">&#9776;</button>
     </nav>
   </header>
 
   <main>
-    <section>
+    <section class="hero">
       <h1>Bem-vindo à ONG Exemplo</h1>
       <p>Transformando vidas através do voluntariado e da solidariedade.</p>
+      <button>Saiba Mais</button>
     </section>
 
-    <section>
+    <section class="mvv">
       <h2>Missão, Visão e Valores</h2>
-      <article>
-        <h3>Missão</h3>
-        <p>Promover oportunidades de desenvolvimento social e inclusão.</p>
-      </article>
-      <article>
-        <h3>Visão</h3>
-        <p>Ser referência em impacto social e engajamento comunitário.</p>
-      </article>
-      <article>
-        <h3>Valores</h3>
-        <ul>
-          <li>Empatia</li>
-          <li>Transparência</li>
-          <li>Comprometimento</li>
-        </ul>
-      </article>
+
+      <div class="mvv-container">
+        <article class="card">
+          <h3>Missão</h3>
+          <p>Promover oportunidades de desenvolvimento social e inclusão.</p>
+        </article>
+
+        <article class="card">
+          <h3>Visão</h3>
+          <p>Ser referência em impacto social e engajamento comunitário.</p>
+        </article>
+
+        <article class="card">
+          <h3>Valores</h3>
+          <ul>
+            <li>Empatia</li>
+            <li>Transparência</li>
+            <li>Comprometimento</li>
+          </ul>
+        </article>
+      </div>
     </section>
   </main>
 
   <footer>
     <p>&copy; 2025 ONG Exemplo</p>
   </footer>
+
 </body>
+
 </html>
