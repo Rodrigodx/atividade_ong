@@ -21,3 +21,8 @@ export function enviarFormulario(payload) {
         }, latency);
     });
 }
+
+export function getUsuarios() {
+    return JSON.parse(localStorage.getItem('usuarios') || '[]');
+}
+
