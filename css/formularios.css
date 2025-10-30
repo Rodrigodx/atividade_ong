@@ -8,7 +8,9 @@ label {
   display: block;
 }
 
-input, select, textarea {
+input,
+select,
+textarea {
   font-size: 1rem;
 }
 
@@ -22,3 +24,38 @@ input, select, textarea {
   display: none;
 }
 
+button.loading {
+  position: relative;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+button.loading::after {
+  content: "";
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-top-color: rgba(255, 255, 255, 0.9);
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: translateY(-50%) rotate(360deg);
+  }
+}
+
+.form-success {
+  padding: 12px;
+  background: #e6ffed;
+  border: 1px solid #2bb673;
+  color: #11502a;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  display: block;
+}

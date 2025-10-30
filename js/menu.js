@@ -1,4 +1,3 @@
-// js/menu.js
 const menuToggle = document.getElementById("menuToggle");
 const menu = document.getElementById("menu");
 
