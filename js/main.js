@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             showSuccess(errorBox, `Usuário ${response.data.nome} criado com ID ${response.data.id}.`);
             form.reset();
-            exibirUsuarios(); // atualizar lista
+            exibirUsuarios();
         } catch (err) {
             showError(errorBox, `Falha ao enviar: ${err.message}`);
         } finally {
