@@ -11,3 +11,14 @@ label {
 input, select, textarea {
   font-size: 1rem;
 }
+
+.form-errors {
+  padding: 10px;
+  background: #ffefef;
+  border: 1px solid #cc0000;
+  color: #b30000;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  display: none;
+}
+

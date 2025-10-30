@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="../css/form.css">
   <link rel="stylesheet" href="../css/cadastro.css">
   <script src="../js/mask.js" defer></script>
+  <script src="../js/validacaoFormulario.js" defer></script>
 </head>
 
 <body>
@@ -29,6 +30,8 @@
 
   <main>
     <h1>Cadastro de Voluntário / Usuário</h1>
+
+    <div id="formErrors" class="form-errors"></div>
 
     <form id="formCadastro" class="formCadastro">
       <fieldset>
@@ -80,14 +83,6 @@
   <footer>
     <p>&copy; 2025 ONG Exemplo</p>
   </footer>
-
-  <script>
-    document.getElementById('formCadastro').addEventListener('submit', (e) => {
-      e.preventDefault();
-      alert("Cadastro enviado com sucesso! (simulação sem back-end)");
-      e.target.reset();
-    });
-  </script>
 </body>
 
 </html>
